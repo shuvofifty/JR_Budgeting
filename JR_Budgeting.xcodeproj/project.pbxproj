@@ -11,6 +11,8 @@
 		F84454E524455A360060F668 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454E424455A360060F668 /* HomeController.swift */; };
 		F84454E824455B810060F668 /* HomeViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454E724455B810060F668 /* HomeViewStruct.swift */; };
 		F84454ED24456BFD0060F668 /* RootCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454EC24456BFD0060F668 /* RootCard.swift */; };
+		F84454F1244957F30060F668 /* RootTextMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454F0244957F30060F668 /* RootTextMod.swift */; };
+		F84454F32449588F0060F668 /* RootTextTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454F22449588F0060F668 /* RootTextTypeEnum.swift */; };
 		F8EC0E05244528BF002A77CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC0E04244528BF002A77CA /* AppDelegate.swift */; };
 		F8EC0E07244528BF002A77CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC0E06244528BF002A77CA /* SceneDelegate.swift */; };
 		F8EC0E09244528BF002A77CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC0E08244528BF002A77CA /* ContentView.swift */; };
@@ -43,6 +45,8 @@
 		F84454E424455A360060F668 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F84454E724455B810060F668 /* HomeViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewStruct.swift; sourceTree = "<group>"; };
 		F84454EC24456BFD0060F668 /* RootCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCard.swift; sourceTree = "<group>"; };
+		F84454F0244957F30060F668 /* RootTextMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTextMod.swift; sourceTree = "<group>"; };
+		F84454F22449588F0060F668 /* RootTextTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTextTypeEnum.swift; sourceTree = "<group>"; };
 		F8EC0E01244528BF002A77CA /* JR_Budgeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JR_Budgeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EC0E04244528BF002A77CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8EC0E06244528BF002A77CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		F84454E924456BC70060F668 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				F84454EE244957270060F668 /* Modifiers */,
 				F84454EA24456BD80060F668 /* UIComponents */,
 			);
 			path = Root;
@@ -123,6 +128,23 @@
 				F84454EC24456BFD0060F668 /* RootCard.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		F84454EE244957270060F668 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F84454EF2449573C0060F668 /* Text */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		F84454EF2449573C0060F668 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				F84454F0244957F30060F668 /* RootTextMod.swift */,
+				F84454F22449588F0060F668 /* RootTextTypeEnum.swift */,
+			);
+			path = Text;
 			sourceTree = "<group>";
 		};
 		F8EC0DF8244528BF002A77CA = {
@@ -322,8 +344,10 @@
 				F8EC0E05244528BF002A77CA /* AppDelegate.swift in Sources */,
 				F84454E22445589A0060F668 /* RootTabController.swift in Sources */,
 				F84454E824455B810060F668 /* HomeViewStruct.swift in Sources */,
+				F84454F32449588F0060F668 /* RootTextTypeEnum.swift in Sources */,
 				F84454ED24456BFD0060F668 /* RootCard.swift in Sources */,
 				F8EC0E07244528BF002A77CA /* SceneDelegate.swift in Sources */,
+				F84454F1244957F30060F668 /* RootTextMod.swift in Sources */,
 				F8EC0E09244528BF002A77CA /* ContentView.swift in Sources */,
 				F84454E524455A360060F668 /* HomeController.swift in Sources */,
 			);

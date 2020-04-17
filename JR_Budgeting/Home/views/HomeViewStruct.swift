@@ -15,19 +15,48 @@ struct HomeViewStruct: View {
                 Image("home-bg")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .edgesIgnoringSafeArea(.top)
-                RootCard()
-                    .offset(y: -130)
-                    .padding(.bottom, -130)
-                Text("My text here")
-                RootCard()
-                RootCard()
-                RootCard()
-                RootCard()
+                VStack {
+                    RootCard {
+                        VStack {
+                            Text("Summary")
+                                .modifier(RootTextMod(style: .h1))
+                            HStack {
+                                Text("Budget Left")
+                                    .modifier(RootTextMod())
+                                Spacer()
+                                Text("Spend")
+                                    .modifier(RootTextMod())
+                            }
+                            HStack {
+                                Text("25,000")
+                                    .modifier(RootTextMod())
+                                Spacer()
+                                Text("30,774")
+                                    .modifier(RootTextMod())
+                            }
+                        }
+                    }
+                    .offset(y: -50)
+                    .padding(.bottom, -30)
+                    
+                    HStack {
+                        Text("Your budget packet")
+                            .modifier(RootTextMod(style: .h2))
+                        Spacer()
+                        Text("+")
+                    }
+                    
+                    RootCard {
+                        Text("Just my card here")
+                    }
+                }.padding(20)
+                
+                
                 Spacer()
                 
             }
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
