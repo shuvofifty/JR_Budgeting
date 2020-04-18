@@ -13,6 +13,8 @@
 		F84454ED24456BFD0060F668 /* RootCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454EC24456BFD0060F668 /* RootCard.swift */; };
 		F84454F1244957F30060F668 /* RootTextMod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454F0244957F30060F668 /* RootTextMod.swift */; };
 		F84454F32449588F0060F668 /* RootTextTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454F22449588F0060F668 /* RootTextTypeEnum.swift */; };
+		F84454F5244A4CD90060F668 /* RootTitleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454F4244A4CD90060F668 /* RootTitleCard.swift */; };
+		F84454FC244A995B0060F668 /* RootTitleCardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84454FB244A995B0060F668 /* RootTitleCardHeader.swift */; };
 		F8EC0E05244528BF002A77CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC0E04244528BF002A77CA /* AppDelegate.swift */; };
 		F8EC0E07244528BF002A77CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC0E06244528BF002A77CA /* SceneDelegate.swift */; };
 		F8EC0E09244528BF002A77CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC0E08244528BF002A77CA /* ContentView.swift */; };
@@ -47,6 +49,8 @@
 		F84454EC24456BFD0060F668 /* RootCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCard.swift; sourceTree = "<group>"; };
 		F84454F0244957F30060F668 /* RootTextMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTextMod.swift; sourceTree = "<group>"; };
 		F84454F22449588F0060F668 /* RootTextTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTextTypeEnum.swift; sourceTree = "<group>"; };
+		F84454F4244A4CD90060F668 /* RootTitleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTitleCard.swift; sourceTree = "<group>"; };
+		F84454FB244A995B0060F668 /* RootTitleCardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTitleCardHeader.swift; sourceTree = "<group>"; };
 		F8EC0E01244528BF002A77CA /* JR_Budgeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JR_Budgeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8EC0E04244528BF002A77CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8EC0E06244528BF002A77CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +129,9 @@
 		F84454EB24456BE60060F668 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				F84454F6244A98B60060F668 /* Header */,
 				F84454EC24456BFD0060F668 /* RootCard.swift */,
+				F84454F4244A4CD90060F668 /* RootTitleCard.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -145,6 +151,14 @@
 				F84454F22449588F0060F668 /* RootTextTypeEnum.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		F84454F6244A98B60060F668 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F84454FB244A995B0060F668 /* RootTitleCardHeader.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		F8EC0DF8244528BF002A77CA = {
@@ -341,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84454F5244A4CD90060F668 /* RootTitleCard.swift in Sources */,
 				F8EC0E05244528BF002A77CA /* AppDelegate.swift in Sources */,
+				F84454FC244A995B0060F668 /* RootTitleCardHeader.swift in Sources */,
 				F84454E22445589A0060F668 /* RootTabController.swift in Sources */,
 				F84454E824455B810060F668 /* HomeViewStruct.swift in Sources */,
 				F84454F32449588F0060F668 /* RootTextTypeEnum.swift in Sources */,

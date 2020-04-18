@@ -9,6 +9,14 @@
 import SwiftUI
 
 struct HomeViewStruct: View {
+    var recentTransaction: [String] = [
+        "Bread",
+        "Ruti",
+        "Aam",
+        "Jam",
+        "Chicken"
+    ]
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -39,18 +47,43 @@ struct HomeViewStruct: View {
                     .offset(y: -50)
                     .padding(.bottom, -30)
                     
-                    HStack {
-                        Text("Your budget packet")
-                            .modifier(RootTextMod(style: .h2))
-                        Spacer()
-                        Text("+")
+                    RootTitleCard(head: {
+                        RootTitleCardHeader(title: "Transactions")
+                    }) {
+                        ForEach(self.recentTransaction, id: \.self) {item in
+                            VStack {
+                                HStack {
+                                   Text(item)
+                                        .modifier(RootTextMod(style: .p2))
+                                    Spacer()
+                                    Text("Edit")
+                                    .foregroundColor(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+                                        .modifier(RootTextMod(style: .p2))
+                                }
+                                Divider()
+                            }
+                        }
                     }
                     
-                    RootCard {
-                        Text("Just my card here")
+                    RootTitleCard(head: {
+                        RootTitleCardHeader(title: "Income")
+                    }) {
+                        ForEach(self.recentTransaction, id: \.self) {item in
+                            VStack {
+                                HStack {
+                                   Text(item)
+                                        .modifier(RootTextMod(style: .p2))
+                                    Spacer()
+                                    Text("Edit")
+                                    .foregroundColor(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+                                        .modifier(RootTextMod(style: .p2))
+                                }
+                                Divider()
+                            }
+                        }
                     }
+                    
                 }.padding(20)
-                
                 
                 Spacer()
                 
