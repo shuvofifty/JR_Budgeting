@@ -44,8 +44,8 @@ struct HomeViewStruct: View {
                             }
                         }
                     }
-                    .offset(y: -50)
-                    .padding(.bottom, -30)
+                    .offset(y: -100)
+                    .padding(.bottom, -100)
                     
                     RootTitleCard(head: {
                         RootTitleCardHeader(title: "Transactions")

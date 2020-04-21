@@ -1,19 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "rectangle.png",
       "idiom" : "universal",
+      "filename" : "libraryAddMaterial.png",
       "scale" : "1x"
     },
     {
       "scale" : "2x",
       "idiom" : "universal",
-      "filename" : "rectangle@2x.png"
+      "filename" : "libraryAddMaterial@2x.png"
     },
     {
-      "filename" : "rectangle@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "libraryAddMaterial@3x.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

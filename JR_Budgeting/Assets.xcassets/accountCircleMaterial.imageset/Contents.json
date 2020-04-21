@@ -1,19 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "rectangle.png",
       "idiom" : "universal",
+      "filename" : "accountCircleMaterial.png",
       "scale" : "1x"
     },
     {
       "scale" : "2x",
       "idiom" : "universal",
-      "filename" : "rectangle@2x.png"
+      "filename" : "accountCircleMaterial@2x.png"
     },
     {
-      "filename" : "rectangle@3x.png",
+      "scale" : "3x",
       "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "accountCircleMaterial@3x.png"
     }
   ],
   "info" : {
