@@ -15,7 +15,7 @@ struct RootCard<Content>: View where Content: View {
     let cardMargin: EdgeInsets
     
     init(
-        contentPadding: EdgeInsets = EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20),
+        contentPadding: EdgeInsets = EdgeInsets(top: 32, leading: 24, bottom: 32, trailing: 24),
         cardMargin: EdgeInsets = EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0),
         @ViewBuilder _ content: @escaping () -> Content
     ) {
@@ -27,8 +27,8 @@ struct RootCard<Content>: View where Content: View {
     var body: some View {
         ZStack {
             RoundedRectangle (cornerRadius: 10, style: .continuous)
-                .fill(Color.white)
-                .shadow(radius: 10)
+                .fill(Color(#colorLiteral(red: 0.8853190541, green: 0.8904536963, blue: 0.8858556747, alpha: 1)))
+                .shadow(radius: 2)
             
             contentBody()
                 .padding(contentPadding)

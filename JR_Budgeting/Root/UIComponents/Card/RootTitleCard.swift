@@ -18,7 +18,7 @@ struct RootTitleCard<BodyContent, HeadContent>: View where BodyContent: View, He
     let cardMargin: EdgeInsets
     
     init(
-        contentPadding: EdgeInsets = EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20),
+        contentPadding: EdgeInsets = EdgeInsets(top: 32, leading: 24, bottom: 32, trailing: 24),
         cardMargin: EdgeInsets = EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0),
         @ViewBuilder head: @escaping () -> HeadContent,
         @ViewBuilder _ content: @escaping () -> BodyContent

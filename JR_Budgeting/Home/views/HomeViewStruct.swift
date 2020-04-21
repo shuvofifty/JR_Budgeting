@@ -19,77 +19,80 @@ struct HomeViewStruct: View {
     
     var body: some View {
         ScrollView {
-            VStack {
+            ZStack(alignment: .top) {
                 Image("home-bg")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 VStack {
-                    RootCard {
-                        VStack {
-                            Text("Summary")
-                                .modifier(RootTextMod(style: .h1))
-                            HStack {
-                                Text("Budget Left")
-                                    .modifier(RootTextMod())
-                                Spacer()
-                                Text("Spend")
-                                    .modifier(RootTextMod())
-                            }
-                            HStack {
-                                Text("25,000")
-                                    .modifier(RootTextMod())
-                                Spacer()
-                                Text("30,774")
-                                    .modifier(RootTextMod())
-                            }
-                        }
-                    }
-                    .offset(y: -100)
-                    .padding(.bottom, -100)
-                    
-                    RootTitleCard(head: {
-                        RootTitleCardHeader(title: "Transactions")
-                    }) {
-                        ForEach(self.recentTransaction, id: \.self) {item in
+                    VStack {
+                        RootCard {
                             VStack {
+                                Text("Summary")
+                                    .modifier(RootTextMod(style: .h1))
                                 HStack {
-                                   Text(item)
-                                        .modifier(RootTextMod(style: .p2))
+                                    Text("Budget Left")
+                                        .modifier(RootTextMod())
                                     Spacer()
-                                    Text("Edit")
-                                    .foregroundColor(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
-                                        .modifier(RootTextMod(style: .p2))
+                                    Text("Spend")
+                                        .modifier(RootTextMod())
                                 }
-                                Divider()
+                                HStack {
+                                    Text("25,000")
+                                        .modifier(RootTextMod())
+                                    Spacer()
+                                    Text("30,774")
+                                        .modifier(RootTextMod())
+                                }
                             }
                         }
-                    }
-                    
-                    RootTitleCard(head: {
-                        RootTitleCardHeader(title: "Income")
-                    }) {
-                        ForEach(self.recentTransaction, id: \.self) {item in
-                            VStack {
-                                HStack {
-                                   Text(item)
-                                        .modifier(RootTextMod(style: .p2))
-                                    Spacer()
-                                    Text("Edit")
-                                    .foregroundColor(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
-                                        .modifier(RootTextMod(style: .p2))
+                        
+                        RootTitleCard(head: {
+                            RootTitleCardHeader(title: "Transactions")
+                        }) {
+                            ForEach(self.recentTransaction, id: \.self) {item in
+                                VStack {
+                                    HStack {
+                                       Text(item)
+                                            .modifier(RootTextMod(style: .p2))
+                                        Spacer()
+                                        Text("Edit")
+                                        .foregroundColor(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+                                            .modifier(RootTextMod(style: .p2))
+                                    }
+                                    Divider()
                                 }
-                                Divider()
                             }
                         }
+                        
+                        RootTitleCard(head: {
+                            RootTitleCardHeader(title: "Income")
+                        }) {
+                            ForEach(self.recentTransaction, id: \.self) {item in
+                                VStack {
+                                    HStack {
+                                       Text(item)
+                                            .modifier(RootTextMod(style: .p2))
+                                        Spacer()
+                                        Text("Edit")
+                                        .foregroundColor(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+                                            .modifier(RootTextMod(style: .p2))
+                                    }
+                                    Divider()
+                                }
+                            }
+                        }
+                        
                     }
+                    .padding(27)
+                    .padding(.top, 40)
                     
-                }.padding(20)
-                
-                Spacer()
-                
+                    Spacer()
+                    
+                }
             }
         }
         .edgesIgnoringSafeArea(.top)
+        .background(Color(#colorLiteral(red: 0.8901367188, green: 0.8902401924, blue: 0.8900902867, alpha: 1)))
     }
 }
 
