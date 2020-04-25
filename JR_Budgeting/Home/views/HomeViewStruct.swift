@@ -20,11 +20,34 @@ struct HomeViewStruct: View {
     var body: some View {
         ScrollView {
             ZStack(alignment: .top) {
-                Image("home-bg")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+//                Image("home-bg")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(minHeight: 351, maxHeight: 351)
+                Rectangle()
+                    .frame(minHeight: 351, maxHeight: 351)
+                    .foregroundColor(Color.clear)
+                    .overlay(Image("home-bg"))
                 VStack {
                     VStack {
+                        Text("Welcome")
+                            .foregroundColor(Color(red: 249, green: 247, blue: 232))
+                            .fontWeight(.bold)
+                            .font(.system(size: 35))
+                            .modifier(RootTextMod(style: .h2))
+                        
+                        Image("default-user-img")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 132, height: 132, alignment: .center)
+                            .background(Color(#colorLiteral(red: 0.8901367188, green: 0.8902401924, blue: 0.8900902867, alpha: 1)))
+                            .clipShape(Circle())
+                            .overlay(
+                                Circle().stroke(Color(red: 249, green: 247, blue: 232), lineWidth: 3)
+                            )
+                            .shadow(radius: 4)
+                            .padding(.bottom, 44)
+                        
                         RootCard {
                             VStack {
                                 Text("Summary")
@@ -84,7 +107,7 @@ struct HomeViewStruct: View {
                         
                     }
                     .padding(27)
-                    .padding(.top, 40)
+                    .padding(.top, 20)
                     
                     Spacer()
                     
